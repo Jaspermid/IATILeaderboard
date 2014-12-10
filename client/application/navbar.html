@@ -5,6 +5,11 @@
         <button class="sort_by_name btn btn-small {{#if sort_by_is 'name'}}active{{/if}}" type="button">Sort by Name</button>
     </div>
 
+    <div class="btn-group" data-toggle="buttons-radio">
+        <button class="sort_by_score btn btn-small {{#if sort_by_is 'score'}}active{{/if}}" type="button">Sort by Score</button>
+        <button class="sort_by_name btn btn-small {{#if sort_by_is 'name'}}active{{/if}}" type="button">Sort by Name</button>
+    </div>
+
     {{#if currentUser}}
     <div class="input-append">
         <input class="player_name input-medium input-font-small" type="text" placeholder="New player"/>
