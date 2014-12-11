@@ -6,8 +6,9 @@
     </div>
 
     <div class="btn-group" data-toggle="buttons-radio">
-        <a href="{{pathFor 'signIn'}}"><button class="btn btn-small published" type="button">Published</button></a>
-        <button class="btn btn-small implementing" type="button"><a href="{{pathFor 'leaderboard'}}">Implementing</a></button>
+        <a href="{{pathFor 'leaderboard'}}"><button class="btn btn-small published" type="button">Implementing</button></a>
+        <a href="{{pathFor 'published'}}"><button class="btn btn-small published" type="button">Published</button></a>
+
     </div>
 
     {{#if currentUser}}
