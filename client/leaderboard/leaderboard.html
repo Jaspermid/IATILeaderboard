@@ -11,8 +11,9 @@
         </tr>
         </thead>
         <tbody>
-        {{#each players}}
-        {{> organisation}}
+
+        {{#each organisation}}
+        {{this.name}}
         {{/each}}
         </tbody>
     </table>
