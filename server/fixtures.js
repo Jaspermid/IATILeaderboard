@@ -2,21 +2,6 @@
  * Created by Jasper on 11/12/14.
  */
 
-Published.insert(
-    {
-        "name": "Cordaid",
-        "score": 100
-    }
-
-)
-
-Published.insert(
-    {
-        "name": "Partos",
-        "score": 30
-    }
-
-)
 
 Implementing.insert(
     {
