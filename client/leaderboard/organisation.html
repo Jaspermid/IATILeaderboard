@@ -10,4 +10,10 @@
 
         {{#if currentUser}}<td><i class="remove icon-remove" rel="tooltip" data-original-title="Delete organisation"></i></td>{{/if}}
     </tr>
+
+    {{#each organisation}}
+    {{this.name}}
+    {{/each}}
+
+
 </template>
