@@ -11,9 +11,7 @@ Template.leaderboard.helpers ({
                 return Published.find({}, {sort: {score: -1}});
             }
             else {
-
                 return Implementing.find({}, {sort: {score: -1}});
-
             }
         }
 
