@@ -20,6 +20,12 @@ Template.admin.helpers ({
         return Published.find({}, {sort: [
             ["name", "asc"]
         ]});
+    },
+
+    implementingorganisation: function (){
+        return Implementing.find({}, {sort: [
+            ["name", "asc"]
+        ]});
     }
 
 })
@@ -82,5 +88,29 @@ Template.admin.events ({
             }
 
         )
+
+
     },
+
+    'click .removeimplementing': function(){
+
+        var e = document.getElementById("selectedimplementingorganisation");
+        var selectedValue = e.options[e.selectedIndex].value;
+
+        Implementing.remove(selectedValue)
+    },
+
+    'click .editimplementing': function(){
+        var e = document.getElementById("editimplementingorganisation");
+        var selectedValue = e.options[e.selectedIndex].value;
+        Implementing.update({
+                _id: selectedValue
+            },
+            {
+                $set: {
+                    score: $('.implementing_org_score_edit').val()
+                }
+            });
+    },
+
 })
